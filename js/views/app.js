@@ -1,6 +1,3 @@
-
-// js/views/app.js
-
 var app = app || {};
 
 // The Application
@@ -14,7 +11,7 @@ app.AppView = Backbone.View.extend({
   el: '#todoapp',
 
   // Our template for the line of statistics at the bottom of the app.
-  statsTemplate: _.template( $('#stats-template').html() ),
+  statsTemplate: _.template( $('#stats-template').html()),
 
   // New
   // Delegated events for creating new items, and clearing completed ones.

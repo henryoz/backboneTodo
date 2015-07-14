@@ -19,6 +19,7 @@
       <label for="toggle-all">Mark all as complete</label>
       <ul id="todo-list"></ul>
     </section>
+    <footer id="footer"></footer>
   </section>
 
   <div id="info">
@@ -43,16 +44,16 @@
 
   <!-- Stats Template-->
   <script type="text/template" id="stats-template">
-    <span id="todo-count"><strong><%= remaining %></strong><%= remaining === 1 ? 'item' : 'items' %> left</span>
+    <span id="todo-count"><strong><%= remaining %></strong> <%= remaining === 1 ? 'item' : 'items' %> left</span>
     <ul id="filters">
       <li>
-        <a href="#" class="selected">All</a>
+        <a class="selected" href="#/">All</a>
       </li>
       <li>
-        <a href="#" class="active">Active</a>
+        <a href="#/active">Active</a>
       </li>
       <li>
-        <a href="#" class="completed">Completed</a>
+        <a href="#/completed">Completed</a>
       </li>
     </ul>
     <% if (completed) { %>

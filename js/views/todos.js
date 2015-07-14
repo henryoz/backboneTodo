@@ -1,5 +1,3 @@
-// js/views/todos.js
-
 var app = app || {};
 
 // Todo Item View

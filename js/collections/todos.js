@@ -33,7 +33,7 @@ var ToDoList = Backbone.Collection.extend({
   },
 
 //  Items are sorted by the order in which they are added
-  comparator: function() {
+  comparator: function(todo) {
     return todo.get('order');
   }
 });
