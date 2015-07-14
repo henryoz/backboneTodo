@@ -24,7 +24,7 @@
 
   <div id="info">
     <p>Double-click to edit a todo</p>
-    <p>Written by <a href="https://github.com/addyosmani">Addy Osmani</a></p>
+    <p>Created by <a href="https://github.com/addyosmani">Addy Osmani</a></p>
     <p>Dicked around with by <a href="https://github.com/henryoz">Henry Osadzinski</a></p>
     <p>Part of <a href="http://todomvc.com">TodoMVC</a></p>
   </div>
@@ -36,7 +36,7 @@
   <script type="text/template" id="item-template">
     <div class="view">
       <input type="checkbox" class="toggle" <%= completed ? 'checked' : '' %>>
-      <label><%= title %></label>
+      <label><%= title %><div class="createdDate"><%= created %></div></label>
       <button class="destroy"></button>
     </div>
     <input class="edit" value="<%= title %>">
